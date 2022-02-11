@@ -5,80 +5,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./normalaize.css">
-    <link rel="stylesheet" type="text/css" href="./main.css">
+    <link rel="stylesheet" href="../VladilenMinin/css/normalaize.css">
+    <link rel="stylesheet" href="../VladilenMinin/css/styles.css">
     <title>Yuri Zhukovsky</title>
 </head>
 
 <body>
-    <table>
-        <tr>
-            <td><img src="./img/1551511801_1.jpg" alt="Аватар" width="300"></td>
-            <td>
+    <div class="container">
+
+        <div class="info">
+            <img src="./img/1551511801_1.jpg" alt="Аватар" class="avatar">
+
+            <div class="info-text">
                 <h1>Yuri Zhukovsky</h1>
-                <p><em>Начинающий падаван фронтенд - разработки</em></p>
-            </td>
-        </tr>
-    </table>
+                <p>Начинающий падаван <em>фронтенд - разработки</em></p>
+                <p>Учусь программировать, занимаюсь спортом, мечтаю путешествовать.</p>
 
-    <hr>
+                <h4>Мои социальные сети</h4>
+                <a href="https://github.com/ToyTrexx" target="_blank">GitHub</a>
+                |
+                <a href="https://www.instagram.com/yuri.zhukovsky" target="_blank">Instagram</a>
+            </div>
 
-    <h2>Мои социальные сети</h2>
-    <ul>
-        <li>
-            <a href="https://github.com/ToyTrexx" target="_blank">GitHub</a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/yuri.zhukovsky" target="_blank">Instagram</a>
-        </li>
-    </ul>
+        </div>
 
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Фитнес</li>
-        <li>Бокс</li>
-        <li>Музыка</li>
-        <li>Финансы</li>
-    </ol>
+        <div class="card bg-papayawhip">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Фитнес</li>
+                <li>Бокс</li>
+                <li>Музыка</li>
+                <li>Финансы</li>
+            </ol>
+        </div>
 
-    <h2>Опыт работы</h2>
-    <table>
-        <tr>
-            <td>Компания</td>
-            <td>Должность</td>
-            <td>Год</td>
-        </tr>
-        <tr>
-            <td>№1 Company</td>
-            <td>Frontend Junior-Developer</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>EPAM</td>
-            <td>Frontend Senior-Developer</td>
-            <td>2023</td>
-        </tr>
-    </table>
+        <div class="card bg-moccasin">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <tr>
+                    <td>№1 Company</td>
+                    <td>Frontend Junior-Developer</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>ModulBank</td>
+                    <td>Frontend Middle-Developer</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>EPAM</td>
+                    <td>Frontend Senior-Developer</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>Yahoo</td>
+                    <td>Frontend Senior-Developer</td>
+                    <td>2026</td>
+                </tr>
+            </table>
+        </div>
 
-    <h2>Связаться со мной</h2>
-    <form>
-        <form action="/">
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя...">
+        <div class="card bg-peachuff">
+            <h2>Пройденные курсы</h2>
+            <ul class="link-list">
+                <li><a href="https://www.youtube.com/watch?v=SpCUuyZZTp8" target="_blank">CSS для Начинающих -
+                        Практический Курс [2021]</a></li>
+                <li><a href="https://www.youtube.com/watch?v=SpCUuyZZTp8" target="_blank">HTML для Начинающих -
+                        Практический Курс [2021]</a></li>
+            </ul>
+        </div>
 
-            <br>
+        <div class="contact">
+            <div class="card bg-peachuff">
+                <h2>Связаться со мной</h2>
+                <form>
+                    <form action="/">
 
-            <label for="email">Ваша почта:</label>
-            <input type="email" id="email" placeholder="Введите почту...">
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="name">Ваше имя:</label>
+                                <input type="text" id="name" placeholder="Введите имя...">
+                            </div>
 
-            <br>
+                            <div class="form-group">
+                                <label for="email">Ваша почта:</label>
+                                <input type="email" id="email" placeholder="Введите почту...">
+                            </div>
 
-            <label for="text"></label>
-            <textarea name="text" id="text" cols="30" rows="10" placeholder="Напишите нам..."></textarea>
-            <input type="submit" value="Связаться">
+                        </div>
 
-        </form>
+                        <div class="form-group">
+                            <label for="text"></label>
+                            <textarea name="text" id="text" cols="15" rows="2" placeholder="Напишите нам..."></textarea>
+                        </div>
 
+                        <input class="btn" type="submit" value="Связаться!">
+
+                        <div class="position">
+                            <div class="box"></div>
+                        </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    </div>
 </body>
 
 </html>
